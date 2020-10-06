@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruot - Final - Web1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="student-info"></section>
+    <section id="data-input"></section>
+    <section id="headline-display"></section>
+    <section id="data-outlet"></section>
+
+    <section id=student-info>
+    <h1>Ruot</h1>
+    <p>My Favorite color is cyan, and I love wearing Addidas or Nike SB.</p>
+    </section>
+<section id=data-input>
+<div id="box">
+    <h1>Font Styler</h1>
+    <div id="font_size">
+        <label for="input-size">Font Size</label>
+        <input type="number" id="input-size" name="Font Size">
+    <select id="select-font">
+            <option>Helvetic</option>
+            <option>Arial</option>
+            <option>Times New Roman</option>
+            <option>Georgia</option>
+    </select>
+</div>
+   <div id=font_color>
+        <label for="input-color">Font Color</label>
+        <input type="color" id="input-color" name="Font Color" value="#000">
+    </div>
+    <div id=background_color>
+       <label for="input-bg-color">Background Color</label>
+        <input type="color" id="input-bg-color" name="Background Color" value="#fff">
+    </div>
+    <div id=enter_text>
+       <label for="enter-text">Enter Text</label>
+        <textarea id="enter-text"></textarea>
+    </div>
+ </div>
+ </section>
+ <section id=headline-display>
+    <h1 id="display"></h1>
+</section>
+<section id=data-outlet>
+    <pre><code>.headline {
+    font-size: <span id="show-size">16</span>px;
+    font-family: <span id="show-font">Times</span>;
+    color: <span id="show-color">#000</span>;
+    background-color: <span id="show-bg-color">#fff</span>;
+        }</code></pre>
+    <script src="script.js"></script>
+    </section>
+</body>
+</html>
